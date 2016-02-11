@@ -1446,7 +1446,7 @@ textarea.form-control {
     padding: 6px 0px;
     font-size: 18px;
     line-height: 60px;
-    height: 60px
+    height: 60px;
     border-radius: 0px;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -1455,6 +1455,7 @@ textarea.form-control {
     font-weight:700;
     letter-spacing:-1px;
 }
+
 
 .btn-default {
     color: #333333;
@@ -1620,8 +1621,8 @@ textarea.form-control {
   background-image: url(../img/logo-dark.png);
   background-position: left center;
   background-repeat: no-repeat;
-  max-width: 88px;
-  width: 88px;
+  max-width: 166px;
+  width: 166px;
   height: 24px;
   line-height: 24px;
 }
