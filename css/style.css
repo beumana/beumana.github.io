@@ -189,7 +189,7 @@ img {
   margin-bottom: 0px;
   border:0px solid;
   border-bottom: 0px solid #d1d4d7; 
-  background: #000;
+  background: #222;
   width:100%;
   z-index:1020;
   border-radius: 0px;
@@ -206,7 +206,7 @@ img {
 
 
 .navbar-dark.navbar-move {
-  background-color: #000; 
+  background-color: #222; 
 }
 
 .navbar-dark.navbar-move .nav > li > a {
@@ -223,7 +223,7 @@ img {
   float: left;
   display: block;
   overflow:hidden;
-  background-image: url(../img/logo-white.png);
+  background-image: url(../img/logo-face.png);
   background-position: left center;
   background-repeat: no-repeat;
   width:100px;
@@ -378,7 +378,7 @@ a.meanmenu-reveal {
   overflow-y: hidden;
   min-height: 60px;
   max-height: 100%;
-  background: #000;
+  background: #222;
   margin-top: 0px;
   width: 100%;
   
@@ -403,7 +403,7 @@ a.meanmenu-reveal {
   display: block;
   font-family: "Karla", sans-serif;
   font-weight: 700;
-  z-index: 5000;
+  z-index: 5222;
   letter-spacing:0px;
   -webkit-transition: all 0ms ease-in; 
      -moz-transition: all 0ms ease-in;
@@ -1192,13 +1192,13 @@ ul.filter li a{
 
 ul.filter li a:hover{   
   text-decoration:underline;
-  color:#000; 
+  color:#222; 
 }
 
 
 ul.filter li.active a{   
   text-decoration:underline;
-  color:#000; 
+  color:#222; 
 }
 
 
@@ -1553,12 +1553,11 @@ textarea.form-control {
 }
 
 #contact p {
-  font-size:18px;
   color:#666666;
   letter-spacing:-1px;
   line-height:24px;
   margin:0px;
-  margin-bottom:45px;
+  margin-bottom:10px;
 }
 
 .contact-icon {
@@ -1615,7 +1614,7 @@ textarea.form-control {
   border:0;
   top:-47px;
   margin-bottom:-54px;
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+ */
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2222/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+ */
     filter: gray; /* IE6-9 */
 	  -webkit-filter: grayscale(99%); /* Chrome 19+ & Safari 6+ */
 	  -webkit-backface-visibility: hidden;  /* Fix for transition flickering */
@@ -1790,4 +1789,168 @@ textarea.form-control {
 
 .text-white {
   color:#fff;
+}
+#portfolio .portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  background: rgba(254, 209, 54, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+  opacity: 1;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: white;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+  margin-top: -12px;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+  margin: 0;
+}
+#portfolio .portfolio-item .portfolio-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+  padding: 25px;
+}
+#portfolio .portfolio-item .portfolio-caption h4 {
+  text-transform: none;
+  margin: 0;
+}
+#portfolio .portfolio-item .portfolio-caption p {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  margin: 0;
+}
+#portfolio * {
+  z-index: 2;
+}
+@media (min-width: 767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+
+.portfolio-modal .modal-content {
+  border-radius: 0;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  min-height: 100%;
+  padding: 100px 0;
+  text-align: center;
+}
+.portfolio-modal .modal-content h2 {
+  margin-bottom: 15px;
+  font-size: 3em;
+}
+.portfolio-modal .modal-content p {
+  margin-bottom: 30px;
+}
+.portfolio-modal .modal-content p.item-intro {
+  margin: 20px 0 30px;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+}
+.portfolio-modal .modal-content ul.list-inline {
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.portfolio-modal .modal-content img {
+  margin-bottom: 30px;
+}
+.portfolio-modal .close-modal {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+.portfolio-modal .close-modal:hover {
+  opacity: 0.3;
+}
+.portfolio-modal .close-modal .lr {
+  height: 75px;
+  width: 1px;
+  margin-left: 35px;
+  background-color: #222222;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Safari and Chrome */
+  z-index: 1051;
+}
+.portfolio-modal .close-modal .lr .rl {
+  height: 75px;
+  width: 1px;
+  background-color: #222222;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Safari and Chrome */
+  z-index: 1052;
+}
+.portfolio-modal .modal-backdrop {
+  opacity: 0;
+  display: none;
+}
+::-moz-selection {
+  text-shadow: none;
+  background: #fed136;
+}
+::selection {
+  text-shadow: none;
+  background: #fed136;
+}
+img::selection {
+  background: transparent;
+}
+img::-moz-selection {
+  background: transparent;
+}
+body {
+  webkit-tap-highlight-color: #fed136;
+}
+
+.pad-below25 {
+  padding-bottom:25px;
+}
+
+.marg-right25 {
+  margin-right: 25px;
+}
+
+.img-centered {
+  margin: 0 auto;
 }
