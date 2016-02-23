@@ -1626,7 +1626,7 @@ textarea.form-control {
 /* --------------------------------------------------------	*/
 
 .footer {
-  padding:125px 0px;
+  padding:100px 0 50px 0;
 }
 
 .footer p {
@@ -1659,7 +1659,12 @@ textarea.form-control {
 }
 
 .marg-right25 {
-  margin-right: 25px;
+  margin-right: 13px;
+  margin-left: 13px;
+}
+.marg-below {
+margin-bottom:12px;
+  
 }
 
 .spacer1 {
