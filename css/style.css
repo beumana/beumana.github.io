@@ -1954,3 +1954,9 @@ body {
 .img-centered {
   margin: 0 auto;
 }
+.special {
+  padding: 0px;
+  padding-right:20px;
+  padding-left:20px;
+  border-radius:15px;
+}
