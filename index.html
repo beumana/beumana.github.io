@@ -50,10 +50,10 @@
 					<a href="index.html#home" title="Home" class="site-logo pull-left"></a>       
           <!-- Menu -->
           <ul class="nav pull-right" id="nav">
-            <li class="selected"><a href="index.html#home">Home</a></li>
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#works">Work</a></li>
-            <li><a href="index.html#contact">Connect</a></li>
+            <li class="selected"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Work</a></li>
+            <li><a href="#contact">Connect</a></li>
           </ul>
         </div>
       </div>         
@@ -159,7 +159,7 @@
     <div class="container">
       <div class="row">
       <div class="masonry-container">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 masonry-post">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
           <div class="box-item"> 
             <div class="media-file">
               <img src="img/portfolio-grid/grid-rtree.png" alt="">
@@ -373,5 +373,24 @@
   <script src="js/mob.nav.js"></script>
   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>      
   <script src="js/functions.js"></script>
+  
+  <script>
+  $(document).ready(function(){
+    // Scrolls smoothly down to the Contact Form
+  	$('a[href^="#"]').on('click',function (e) {
+  	    e.preventDefault();
+  
+  	    var target = this.hash;
+  	    var $target = $(target);
+  
+  	    $('html, body').stop().animate({
+  	        'scrollTop': $target.offset().top
+  	    }, 900, 'swing', function () {
+  	        window.location.hash = target;
+  	    });
+  	});
+  });  
+</script>
+  
   </body>   
 </html>
