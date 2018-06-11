@@ -463,8 +463,14 @@ a:active {
   -webkit-transform: translate(-50%,-50%);
   -moz-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  width: 600px;
+  width:800px;
 }
+@media only screen and (max-width: 767px) {
+  .banner-text {
+    width: 400px;
+  }
+}
+
 .banner-text h1 {
   color: #000;
   margin-bottom: 8px;
