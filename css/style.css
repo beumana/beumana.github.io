@@ -539,7 +539,7 @@ a:active {
    ----------- 11.1.BANNER INDEX ----------
    ---------------------------------------- */
 .banner-1 {
-  background: url(../img/banner.jpg) center center no-repeat;
+  /* background: url(../img/banner.jpg) center center no-repeat; */
   background-size: cover;
   background-attachment: fixed;
 }
@@ -547,7 +547,7 @@ a:active {
    ---------- 11.2.BANNER INDEX.2 ---------
    ---------------------------------------- */
 .banner-2 {
-  background: url(../img/banner_1.jpg) center center no-repeat;
+  /* background: url(../img/banner_1.jpg) center center no-repeat; */
   background-size: cover;
   background-attachment: fixed;
 }
